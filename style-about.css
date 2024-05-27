@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    height: 100vh;
+}
+header {
+    background-color: rgb(159, 195, 124);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 10px;
+}
+
+.header div a {
+    padding: 0 25px;
+    text-decoration: none;
+    color: #eceff1;
+    font-weight: 700;
+    justify-content: space-around;
+}
+
+header div a:hover {
+    transform: scale(1.1);
+}
+
+header a img {
+    height: 30px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.header a img:hover {
+    transform: scale(1.2);
+}
+
+header div button {
+    height: 30px;
+    border-style: none;
+    border-radius: 15px;
+}
+
+.header div button a {
+    color: rgb(159, 195, 124);
+}
+main .imagen-principal-1 {
+    height: 480px;
+}
+
+h1 {
+    color: grey;
+}
+p {
+    background-color: aquamarine;
+}
+/* Selector por clase */
+.mi-articulo {
+    color: blueviolet;
+}
+
+section {
+    background-color: bisque;
+}
+
+section article p {
+    background-color: rgb(203, 213, 222);
+    border-radius: 15px;
+}
+
+footer {
+    border-top: 1px solid black;
+    height: 40px;
+}

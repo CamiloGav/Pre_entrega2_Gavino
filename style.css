@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(159, 195, 124);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 10px;
+    box-shadow:  0px 0px 5px #4f5b6d;
+}
+
+/* CSS del buscador */
+
+.buscador {
+    height: 34px;
+    border: 2px solid #eceff1;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.buscador:hover {
+    background-color: rgb(180, 211, 150);
+}
+
+.buscador img {
+    height: 24px;
+}
+
+.buscador input {
+    border: none;
+    background: none;
+}
+
+.buscador input::placeholder {
+    color: #eceff1;
+}
+
+.buscador input:focus {
+    outline-style: none;
+    width: 400px;
+    height: 36px;
+}
+/* CSS del buscador */
+
+.header div a {
+    padding: 0 25px;
+    text-decoration: none;
+    color: #eceff1;
+    font-weight: 700;
+    justify-content: space-around;
+}
+
+.menu_open { 
+    display: none;
+}
+
+header div a:hover {
+    transform: scale(1.1);
+}
+
+header a img {
+    height: 30px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.header a img:hover {
+    transform: scale(1.2);
+}
+
+header div button {
+    cursor: pointer;
+    padding: 0 25px;
+    height: 30px;
+    border-style: none;
+    border-radius: 15px;
+    color: rgb(159, 195, 124);
+    font-weight: 700;
+}
+
+.header div button:hover {
+    border: solid 2px #eceff1;
+    background-color: rgb(159, 195, 124);
+    color: #eceff1;
+}
+
+.header div button a {
+    color: rgb(159, 195, 124);
+}
+
+.menu_open {
+    display: none;
+}
+
+/* CSS Mensanje para instalar app */
+
+.install-app {
+    display: none;
+    background-color: black;
+
+}
+
+.install-app img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.install-app p {
+    font-size: 0.9rem;
+    /* margin: 0 30px; */
+    color: #eceff1;
+    background: none;
+}
+
+.install-app button {
+    background-color: #3483fa;
+    color: #eceff1;
+    padding: 4px 6px;
+    border: none;
+    border-radius: 3px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+main .imagen-principal-1 {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 10px;
+}
+
+h1 {
+    color: grey;
+}
+p {
+    background-color: aquamarine;
+}
+/* Selector por clase */
+.mi-articulo {
+    color: blueviolet;
+}
+
+section {
+    background-color: bisque;
+}
+
+section article p {
+    background-color: rgb(203, 213, 222);
+    border-radius: 15px;
+}
+
+footer {
+    border-top: 1px solid black;
+    height: 40px;
+}
+
+form {
+    display: inline-grid;
+    height: 480px;
+    padding: 15px;
+}
+
+form input {
+    width: 460px;
+    margin: 10px;
+}
+
+/* Medias queries */
+
+@media (max-width: 480px) {
+    .header div a {
+        display: none;
+    }
+
+    header div button {
+        display: none;
+    }
+
+    .menu_open {
+        display: flex;
+        height: 30px;
+    }
+
+    .buscador input:focus {
+        outline-style: none;
+        width: 200px;
+        height: 36px;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .install-app {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+    }
+}
