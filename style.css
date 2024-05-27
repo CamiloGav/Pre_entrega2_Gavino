@@ -1,3 +1,7 @@
+:root {
+    --my-verde: rgb(159, 195, 124);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -64,7 +68,37 @@ header div a:hover {
     transform: scale(1.1);
 }
 
-header a img {
+/* CSS de about.html para ventana emergente */
+main .imagen-about {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.modal-body .header h2 {
+    font-size: 1.5rem;
+    padding-left: 15px;
+    color: #eceff1;
+}
+.modal-header a img {
+    height: 30px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.mi-articulo h1 {
+    color: var(--my-verde);
+    text-align: center;
+}
+.mi-articulo h3 {
+    color: var(--my-verde);
+    text-align: center;
+}
+
+.mi-articulo p {
+    padding: 5px 10PX;
+    text-align: justify;
+}
+
+.header a img {
     height: 30px;
     border-radius: 50%;
     transition: all 0.3s;
@@ -98,7 +132,7 @@ header div button {
     display: none;
 }
 
-/* CSS Mensanje para instalar app */
+/* CSS Mensaje para instalar app */
 
 .install-app {
     display: none;
@@ -145,14 +179,6 @@ h1 {
 p {
     background-color: aquamarine;
 }
-/* Selector por clase */
-.mi-articulo {
-    color: blueviolet;
-}
-
-section {
-    background-color: bisque;
-}
 
 section article p {
     background-color: rgb(203, 213, 222);
@@ -177,7 +203,7 @@ form input {
 
 /* Medias queries */
 
-@media (max-width: 480px) {
+@media (max-width: 788px) {
     .header div a {
         display: none;
     }
