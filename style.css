@@ -1,5 +1,6 @@
 :root {
     --my-verde: rgb(159, 195, 124);
+    --my-blanco: #eceff1;
 }
 
 * {
@@ -108,13 +109,14 @@ main .imagen-about {
     transform: scale(1.2);
 }
 
-header div button {
+.header div button {
     cursor: pointer;
     padding: 0 25px;
     height: 30px;
     border-style: none;
     border-radius: 15px;
-    color: rgb(159, 195, 124);
+    color: var(--my-verde);
+    background-color: var(--my-blanco);
     font-weight: 700;
 }
 
@@ -124,12 +126,24 @@ header div button {
     color: #eceff1;
 }
 
-.header div button a {
-    color: rgb(159, 195, 124);
-}
-
+/* Menu desplegable a traves de bootstrap */
 .menu_open {
     display: none;
+}
+
+.btn-group .btn {
+    display: none;
+}
+
+.dropdown-menu .show ul li a {
+    font-size: 2rem;
+    background-color: #3483fa;
+    color: red;
+    height: 30px;
+}
+
+.dropdown-menu li {
+    margin: 5px;
 }
 
 /* CSS Mensaje para instalar app */
@@ -201,10 +215,11 @@ form input {
     margin: 10px;
 }
 
+
 /* Medias queries */
 
-@media (max-width: 788px) {
-    .header div a {
+@media (max-width: 826px) {
+    .menu-lg {
         display: none;
     }
 
@@ -221,6 +236,10 @@ form input {
         outline-style: none;
         width: 200px;
         height: 36px;
+    }
+
+    .btn-group .btn {
+        display: flex;
     }
 
 }

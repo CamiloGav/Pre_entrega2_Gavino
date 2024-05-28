@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Incluyendo CSS</title>
     <link rel="stylesheet" href="./style.css">
     <!-- Link Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
     <header class="header">
         <a href="./about.html" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <img src="./assets/img/Logo.jpg" alt="Logo" >
+            <img src="./assets/img/Logo.jpg" alt="Logo">
         </a>
         <div class="buscador">
             <img src="./assets/img/logo_lupa.png" alt="logo_lupa">
             <input type="text" name="buscador" placeholder="Buscar">
         </div>
-        <div>
+        <div class="menu-lg">
             <a href="#">Inicio</a>
             <a href="./categorias.html">Categorias</a>
             <a href="./servicios.html">Servicios</a>
-            <button>
-                <a href="./acount.html">
-                    Ingresar
-                </a>
-            </button>
+            <a href="./acount.html">
+                <button href="./acount.html">Iniciar Sesion
+                </button>
+            </a>
         </div>
-        <img src="./assets/img/menu_open.png" alt="Menú desplegable" class="menu_open">
+        <!-- INICIO - Menú desplegable con Bootstrap - HTML -->
+        <!-- <img src="./assets/img/menu_open.png" alt="Menú desplegable" class="menu_open"> -->
+        <div class="btn-group dropstart">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">Menú
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="./categorias.html" class="dropdown-item" >Categorias</a></li>
+                <li><a href="./servicios.html" class="dropdown-item" >Servicios</a></li>
+                <li><a href="./acount.html" class="dropdown-item">Iniciar Sesion</a></li>
+            </ul>
+        </div>
+        <!-- FINAL - Menú desplegable con Bootstrap - HTML -->
     </header>
     <div class="install-app">
         <img src="./assets/img/logo.jpg" alt="Logo">
@@ -45,7 +59,6 @@
                         <a href="#">
                             <img src="./assets/img/Logo.jpg" alt="Logo">
                         </a>
-                        <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -58,7 +71,11 @@
                                 <article class="mi-articulo">
                                     <h1>Vivero App</h1>
                                     <h3>"Una app, para todos los viveros"</h3>
-                                    <p>El objetivo de esta aplicación es contar con una app, genérica que pueda ser usada por cualquier vivero. Al registrarnos podremos administrar en forma sencilla nuestro stock, vender online y facilitar el trabajo diario. Su función de scanner por QR, permite una experiencia inmersiva para saber más de plantas del vivero.</p>
+                                    <p>El objetivo de esta aplicación es contar con una app, genérica que pueda ser
+                                        usada por cualquier vivero. Al registrarnos podremos administrar en forma
+                                        sencilla nuestro stock, vender online y facilitar el trabajo diario. Su función
+                                        de scanner por QR, permite una experiencia inmersiva para saber más de plantas
+                                        del vivero.</p>
                                 </article>
                             </section>
                         </main>
@@ -73,24 +90,30 @@
         <!-- Finaliza Modal -->
 
         <!-- Agregamos un carrucel con Bootstrap -->
-        
+
         <!-- Finaliza el carrucel -->
         <h1>Página principal</h1>
         <section>
             <article class="mi-articulo">
                 <h2>Información importante - en constante cambio.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sequi architecto iste a nostrum nisi perspiciatis corrupti molestias cupiditate animi quod tempore aliquam placeat commodi illum voluptates accusantium, quae vitae.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sequi architecto iste a nostrum nisi
+                    perspiciatis corrupti molestias cupiditate animi quod tempore aliquam placeat commodi illum
+                    voluptates accusantium, quae vitae.</p>
             </article>
             <br>
             <article class="mi-articulo">
-                <h2>Subtitulo</h2> 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam labore iusto mollitia placeat, dolores consequatur repudiandae. Facere, voluptate non fugiat iure, quisquam error, atque obcaecati itaque assumenda quo tenetur.</p>
+                <h2>Subtitulo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam labore iusto mollitia
+                    placeat, dolores consequatur repudiandae. Facere, voluptate non fugiat iure, quisquam error, atque
+                    obcaecati itaque assumenda quo tenetur.</p>
             </article>
         </section>
-        <br>    
+        <br>
         <article>
             <h2>Subtitulo</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ea! Obcaecati exercitationem, libero dolorum at sapiente nemo ducimus cupiditate omnis blanditiis accusantium soluta, odio sint placeat consequatur nobis alias debitis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ea! Obcaecati exercitationem, libero
+                dolorum at sapiente nemo ducimus cupiditate omnis blanditiis accusantium soluta, odio sint placeat
+                consequatur nobis alias debitis.</p>
         </article>
     </main>
     <!-- Tengo que llevar el footer al fondo de la página -->
@@ -98,8 +121,15 @@
         <a href="">Configuración</a>
         <a href=""><img src="./assets/img/logo-configuracion.png" alt="Logo configuración"></a>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script> -->
 </body>
+
 </html>
