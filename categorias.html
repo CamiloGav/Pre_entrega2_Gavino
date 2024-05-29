@@ -13,18 +13,35 @@
 
 <body>
     <header class="header">
-        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <a href="./about.html" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <img src="./assets/img/Logo.jpg" alt="Logo">
         </a>
-        <div>
+        <div class="buscador">
+            <img src="./assets/img/logo_lupa.png" alt="logo_lupa">
+            <input type="text" name="buscador" placeholder="Buscar">
+        </div>
+        <div class="menu-lg">
             <a href="./index.html">Inicio</a>
             <a href="#">Categorias</a>
             <a href="./servicios.html">Servicios</a>
             <a href="./acount.html">
-                <button href="./acount.html">Iniciar Sesion
+                <button>Iniciar Sesion
                 </button>
             </a>
         </div>
+        <!-- INICIO - Menú desplegable con Bootstrap - HTML -->
+        <!-- <img src="./assets/img/menu_open.png" alt="Menú desplegable" class="menu_open"> -->
+        <div class="dropstart">
+            <button type="button" class="btn btn-secondary " data-bs-toggle="dropdown"
+                aria-expanded="false">Menú
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="./categorias.html" >Categorias</a></li>
+                <li><a href="./servicios.html"  >Servicios</a></li>
+                <li><a href="./acount.html" >Iniciar Sesion</a></li>
+            </ul>
+        </div>
+        <!-- FINAL - Menú desplegable con Bootstrap - HTML -->
     </header>
     <main>
         <!-- Agregamos Modal de Bootstrap -->

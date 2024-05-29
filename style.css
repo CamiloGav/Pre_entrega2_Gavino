@@ -69,6 +69,10 @@ header div a:hover {
     transform: scale(1.1);
 }
 
+.dropstart {
+    display: none;
+}
+
 /* CSS de about.html para ventana emergente */
 main .imagen-about {
     width: 100%;
@@ -219,6 +223,11 @@ form input {
 /* Medias queries */
 
 @media (max-width: 826px) {
+
+    .dropstart {
+        display: flex;
+    }
+
     .menu-lg {
         display: none;
     }
@@ -242,6 +251,21 @@ form input {
         display: flex;
     }
 
+    .dropstart button .dropdown-toggle::before {
+        display: none;
+        border-right: none;
+    }
+
+    .dropdown-menu .show {
+        width: 180px;
+    }
+    .header div a {
+        padding: 0 5px;
+        color: var(--my-verde);
+    }
+    .header div button:active {
+        background-color: var(--my-verde);
+    }
 }
 
 @media (max-width: 360px) {
