@@ -36,25 +36,43 @@
                 aria-expanded="false">Menú
             </button>
             <ul class="dropdown-menu">
+                <li><a href="./index.html" >Inicio</a></li>
                 <li><a href="./categorias.html" >Categorias</a></li>
                 <li><a href="./servicios.html"  >Servicios</a></li>
-                <li><a href="./acount.html" >Iniciar Sesion</a></li>
             </ul>
         </div>
         <!-- FINAL - Menú desplegable con Bootstrap - HTML -->
     </header>
     <main>
-        <h1>Crear cuenta</h1>
-        <form name="formulario" method="post">
-            <h2>Crea tu cuenta</h2>
-            <input type="text" name="nombre" placeholder="Nombre">
-            <input type="text" name="apellido" placeholder="Apellido">
-            <input type="email" name="correo" placeholder="Correo">
-            <input type="confirmar-email" name="correo" placeholder="Confirma correo">
-            <input type="password" name="password" placeholder="Contraseña">
-            <input type="password" name="password" placeholder="Confirma contraseña">
-            <input type="submit" name="enviar" id="Crear cuenta">
-        </form>
+        <!-- Aqui intentare realizar un Inicio de Sesion -->
+        <div class="logo-acount">
+            <img src="./assets/img/logo.jpg" alt="Logo, en el registro" class="acount-logo">
+            <Vivero class="acount-title">App Vivero</h1>
+        </div>
+        <section class="acount-container">
+            <div class="container-usur">
+                <label for="usur">
+                    <img src="./assets/img/user.svg" alt="Logo de usuario">
+                </label>
+                <input type="text" placeholder="Ingresa tu usuario" id="usur"> 
+            </div>
+            <div class="container-password">
+                <label for="passw">
+                    <img src="./assets/img/lock.svg" alt="Logo de password">
+                </label>
+                <input type="password" placeholder="Ingresa tu contraseña" id="passw"> 
+            </div>
+            <div>
+                <input type="checkbox" name="check" id="check-usur">
+                <label for="recordatorio-usur">Recuérdame</label>
+                <a href="#">¿Has olvidado tu contraseña?</a>
+            </div>
+            <button class="button-iniciosesion"></button>
+            </hr>
+            <button class="button-registro"></button>
+        </section>
+        <!-- Aqui finaliza la ventana de Inicio de Sesion -->
+        
         <!-- Agregamos Modal de Bootstrap -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">

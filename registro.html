@@ -23,9 +23,9 @@
         <div class="menu-lg">
             <a href="./index.html">Inicio</a>
             <a href="./categorias.html">Categorias</a>
-            <a href="#">Servicios</a>
-            <a href="./acount.html">
-                <button >Iniciar Sesion
+            <a href="./servicios.html">Servicios</a>
+            <a href="#">
+                <button>Iniciar Sesion
                 </button>
             </a>
         </div>
@@ -37,14 +37,24 @@
             </button>
             <ul class="dropdown-menu">
                 <li><a href="./index.html" >Inicio</a></li>
-                <li><a href="./categorias.html"  >Categorias</a></li>
-                <li><hr href=""></hr></a></li>
-                <li><a href="./acount.html" >Iniciar Sesion</a></li>
+                <li><a href="./categorias.html" >Categorias</a></li>
+                <li><a href="./servicios.html"  >Servicios</a></li>
             </ul>
         </div>
         <!-- FINAL - Menú desplegable con Bootstrap - HTML -->
     </header>
     <main>
+        <h1>Crear cuenta</h1>
+        <form name="formulario" method="post">
+            <h2>Crea tu cuenta</h2>
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="text" name="apellido" placeholder="Apellido">
+            <input type="email" name="correo" placeholder="Correo">
+            <input type="confirmar-email" name="correo" placeholder="Confirma correo">
+            <input type="password" name="password" placeholder="Contraseña">
+            <input type="password" name="password" placeholder="Confirma contraseña">
+            <input type="submit" name="enviar" id="Crear cuenta">
+        </form>
         <!-- Agregamos Modal de Bootstrap -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -82,31 +92,6 @@
             </div>
         </div>
         <!-- Finaliza Modal -->
-        <img class="imagen-principal-1" src="./assets/img/categoria-de-productos-e-commerce.jpg"
-            alt="Imagen de vivero.">
-        <h1>Página de Servicios</h1>
-        <section>
-            <article class="mi-articulo">
-                <h2>Información importante - en constante cambio.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sequi architecto iste a nostrum nisi
-                    perspiciatis corrupti molestias cupiditate animi quod tempore aliquam placeat commodi illum
-                    voluptates accusantium, quae vitae.</p>
-            </article>
-            <br>
-            <article class="mi-articulo">
-                <h2>Subtitulo</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam labore iusto mollitia
-                    placeat, dolores consequatur repudiandae. Facere, voluptate non fugiat iure, quisquam error, atque
-                    obcaecati itaque assumenda quo tenetur.</p>
-            </article>
-        </section>
-        <br>
-        <article>
-            <h2>Subtitulo</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ea! Obcaecati exercitationem, libero
-                dolorum at sapiente nemo ducimus cupiditate omnis blanditiis accusantium soluta, odio sint placeat
-                consequatur nobis alias debitis.</p>
-        </article>
     </main>
     <!-- Tengo que llevar el footer al fondo de la página -->
     <footer>
