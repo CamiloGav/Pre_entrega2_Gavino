@@ -44,17 +44,33 @@
         <!-- FINAL - Menú desplegable con Bootstrap - HTML -->
     </header>
     <main>
-        <h1>Crear cuenta</h1>
-        <form name="formulario" method="post">
-            <h2>Crea tu cuenta</h2>
-            <input type="text" name="nombre" placeholder="Nombre">
-            <input type="text" name="apellido" placeholder="Apellido">
-            <input type="email" name="correo" placeholder="Correo">
-            <input type="confirmar-email" name="correo" placeholder="Confirma correo">
-            <input type="password" name="password" placeholder="Contraseña">
-            <input type="password" name="password" placeholder="Confirma contraseña">
-            <input type="submit" name="enviar" id="Crear cuenta">
-        </form>
+        <!-- Aqui intentare realizar un Inicio de Sesion -->
+        <div class="logo-acount">
+            <img src="./assets/img/logo.jpg" alt="Logo, en el registro" class="acount-logo">
+            <h1 class="acount-title">App Vivero</h1>
+
+        </div>
+        <section class="acount-container">
+            <form name="formulario" method="post">
+                <h2>Crea tu cuenta</h2>
+                <input type="text" name="nombre" placeholder="Nombre">
+                <input type="text" name="apellido" placeholder="Apellido">
+                <input type="email" name="correo" placeholder="Correo">
+                <input type="confirmar-email" name="correo" placeholder="Confirma correo">
+                <input type="password" name="password" placeholder="Contraseña">
+                <input type="password" name="password" placeholder="Confirma contraseña">
+            </form>
+            <a href="#" style="text-decoration: none">
+                <button class="button-registro">Confirmar</button>
+            </a>
+            <hr href=""></hr class="hr-separador">
+            <p class="p-sign-in">Si ya tenes cuenta ...</p>
+            <a href="./acount.html" style="text-decoration: none">
+                <button class="button-registro">Iniciar Sesión</button>
+            </a>
+        </section>
+        <!-- Aqui finaliza la ventana de Inicio de Sesion -->
+
         <!-- Agregamos Modal de Bootstrap -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
