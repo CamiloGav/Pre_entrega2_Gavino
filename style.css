@@ -283,6 +283,8 @@ form input {
 
 .container-password { /*Contenedor del input - Contraseña*/
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
     width: 320px;
     border: solid 1px rgb(84, 68, 132);
     height: 40px;
@@ -290,8 +292,6 @@ form input {
     margin-top: 25px;
     margin-bottom: 10px;
     border-radius: 4px;
-    align-items: center;
-    justify-content: flex-start;
 }
 .container-password img { 
     margin: 0 10px;
@@ -304,6 +304,36 @@ form input {
 .container-password input:focus {
     outline: none;
 }
+
+.container-recordatorio { /*Contenedor del check para recuerdame*/
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.button-iniciosesion { /*Contenedor boton de Inicio de Sesion*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.button-registro { /*Contenedor boton de Registrarse*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
 
 
 /* Aqui finaliza - Css para la pagina de Inicio de Sesion */
